@@ -14,6 +14,10 @@ SELECT title, Discription.
 FROM booking
 LEFT JOIN Users ON Users.user_id = Listing.Created_by;
 
+----the Inner join of the user table and the Listing table
+SELECT title, Discription.
+FROM booking
+INNER JOIN Users ON Users.user_id = Listing.Created_by;
 
 
 
