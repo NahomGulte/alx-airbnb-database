@@ -12,7 +12,7 @@ RIGHT JOIN Booking ON Booking.booking_id = payment.Customer_id;
 ----the Left join of the user table and the Listing table
 SELECT title, Discription.
 FROM booking
-LEFT JOIN Users ON Users.user_id = Listing.Created_by;
+LEFT JOIN Users ON Users.user_id = Listing.Created_by order by user_id desc;
 
 ----the Inner join of the user table and the Listing table
 SELECT title, Discription.
