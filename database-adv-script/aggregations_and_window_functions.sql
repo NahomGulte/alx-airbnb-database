@@ -11,3 +11,12 @@ SELECT
     RANK() OVER (ORDER BY COUNT(*) DESC) AS rank
 FROM booking
 GROUP BY listing_id;
+
+------------------- to raw number of listing based on the total number of bookings
+SELECT
+    listing_id,
+    COUNT(*) AS total_bookings,
+    ROW_NUMBER() OVER (ORDER BY COUNT(*) DESC) AS rank
+FROM booking
+GROUP BY listing_id;
+
