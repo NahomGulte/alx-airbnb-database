@@ -1,7 +1,7 @@
 --------------the average of rating---------------------- 
 SELECT * 
 FROM listing
-WHERE HAVING avg(*) > 4 GROUP BY rating;
+WHERE HAVING AVG(*) > 4.0 GROUP BY rating;
 
 ------------ the counting of booking having less than 3
 SELECT *
